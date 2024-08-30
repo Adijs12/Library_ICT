@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chethan Bhagath</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body_items">
+        <div class="item_1">
+            <img src="images/6.png" alt="">
+        </div>
+        <div class="item_2">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="just_do_it">
+            <p>Just
+               Read
+               Out
+            </p>
+        </div>
+    </div>    
+    <div class="container">
+        <nav>
+            <div class="left_nav">
+                <div class="nav_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="link">HOME</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">NEW</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Author</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Best Seller</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_nav">
+                <div class="nav_cart_box">
+                    <i class="bx bx-cart"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="menu_bars" onclick="myMenuFunction()">
+                        <div class="menu_bars_btn">
+                          <img src="images/horizontal.png" class="bar_1">
+                          <img src="images/horizontal.png" class="bar_2">
+                        </div>
+                        <div class="nav_dropdown_menu" id="navDropdownMenu">
+                           <ul>
+                             <li>
+                                 <a href="#" class="link">HOME</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">New</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Author</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Best Seller</a>
+                                 <div class="link_border"></div>
+                             </li>
+                           </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="left_col">
+                <div class="book_title">
+                    <p>Half Girlfriend</p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="book_description">
+                    <p>"Half Girlfriend" by Chetan Bhagat is a contemporary romance novel that delves into the intricacies of love, cultural divides, and the aspirations of young Indians. The narrative is set against the backdrop of urban and rural India, highlighting the contrast between the two worlds.
+
+                        The protagonist, Madhav Jha, hails from a small village in Bihar. He is a typical small-town boy with big dreams, who gains admission to the prestigious St. Stephen's College in Delhi through a sports quota for basketball. Madhav's character is portrayed as earnest and hardworking, yet he struggles with English, which makes him feel out of place among the more affluent and polished students of the college.
+                        
+                        At St. Stephen's, Madhav meets Riya Somani, a beautiful, rich girl from Delhi. Riya is everything Madhav is not—confident, fluent in English, and socially adept. Despite their differences, they form a close bond over their mutual love for basketball. Madhav quickly falls in love with Riya, but she makes it clear that she only wants to be friends. Madhav, unable to accept just friendship, pushes for a romantic relationship, leading Riya to offer the ambiguous term "half girlfriend."
+                        
+                        The term "half girlfriend" symbolizes the awkward and undefined space between friendship and a romantic relationship. This reflects Madhav's internal conflict and Riya's hesitation to fully commit due to her own troubled past and complex emotions.</p>
+                </div>
+            </div>
+            <div class="cart-button-container">
+                <button id="addToCartBtn" class="btn btn-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        
+
+    function myMenuFunction() {
+        var i = document.getElementById("navDropdownMenu");
+
+          if(i.className === "nav_dropdown_menu") {
+               i.className += " responsive";
+          } else {
+               i.className = "nav_dropdown_menu";
+          }
+   }
+   document.getElementById('addToCartBtn').addEventListener('click', function() {
+    this.classList.toggle('added');
+    if (this.classList.contains('added')) {
+        this.textContent = 'Added to Cart';
+    } else {
+        this.textContent = 'Add to Cart';
+    }
+});
+      
+     </script>
+     
+</body>
+</html>

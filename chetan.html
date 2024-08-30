@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chethan Bhagath</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body_items">
+        <div class="item_1">
+            <img src="images/6.png" alt="">
+        </div>
+        <div class="item_2">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="just_do_it">
+            <p>Just
+               Read
+               Out
+            </p>
+        </div>
+    </div>    
+    <div class="container">
+        <nav>
+            <div class="left_nav">
+                <div class="nav_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="link">HOME</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">NEW</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Author</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Best Seller</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_nav">
+                <div class="nav_cart_box">
+                    <i class="bx bx-cart"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="menu_bars" onclick="myMenuFunction()">
+                        <div class="menu_bars_btn">
+                          <img src="images/horizontal.png" class="bar_1">
+                          <img src="images/horizontal.png" class="bar_2">
+                        </div>
+                        <div class="nav_dropdown_menu" id="navDropdownMenu">
+                           <ul>
+                             <li>
+                                 <a href="#" class="link">HOME</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">New</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Author</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Best Seller</a>
+                                 <div class="link_border"></div>
+                             </li>
+                           </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="left_col">
+                <div class="book_title">
+                    <p>Chetan Bhaga</p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="book_description">
+                    <p>Chetan Bhagat is a bestselling Indian author known for his relatable and engaging storytelling that captures the essence of modern Indian life. His novels, often set against the backdrop of India's middle-class society, explore themes of love, friendship, career struggles, and social issues. Bhagat's writing style is simple yet impactful, making his books accessible to a wide audience. Some of his most popular works, like "Five Point Someone," "2 States," and "The 3 Mistakes of My Life," have not only resonated with readers but have also been adapted into successful Bollywood films. His stories often inspire and provoke thought, reflecting the aspirations and challenges of contemporary India.</p>
+                </div>
+
+                <div class="shop_box">
+                    <a href="fivepoint.html" style="text-decoration: none;">
+                        <div class="shop_item_container">
+                            <div class="book_img_box">
+                                <img src="images/five.jpeg" class="book_img">
+                            </div>
+                            <div class="book_name_price">
+                                <h3>Five Point Someone</h3>
+                                <p>rs 399</p>
+                            </div>
+                            <div class="add_to_shop">
+                                <i class="bx bx-cart"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="half.html" style="text-decoration: none;">
+                    <div class="shop_item_container">
+                        <div class="book_img_box">
+                             <img src="images/half.jpeg" class="book_img">
+                        </div>
+                        <div class="book_name_price">
+                             <h3>Half Girlfriend</h3>
+                             <p>rs 299</p>
+                        </div>
+                        <div class="add_to_shop">
+                            <i class="bx bx-cart"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="half.html" style="text-decoration: none;">
+                    <div class="shop_item_container">
+                        <div class="book_img_box">
+                             <img src="images/one.jpeg" class="book_img">
+                        </div>
+                        <div class="book_name_price">
+                             <h3>One Indian girl</h3>
+                             <p>rs 399</p>
+                        </div>
+                        <div class="add_to_shop">
+                            <i class="bx bx-cart"></i>
+                        </div>
+                    </div>
+                </a>
+                    <a href="half.html" style="text-decoration: none;">
+                    <div class="shop_item_container">
+                        <div class="book_img_box">
+                             <img src="images/3.jpeg" class="book_img">
+                        </div>
+                        <div class="book_name_price">
+                             <h3>The 3 Mistakes of My Life</h3>
+                             <p>rs 499</p>
+                        </div>
+                        <div class="add_to_shop">
+                            <i class="bx bx-cart"></i>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div class="right_col">
+                <img src="images/1.png" class="featured_img" alt="">
+                <div class="shopping_cart_btn">
+                    <i class="bx bx-cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        
+
+    function myMenuFunction() {
+        var i = document.getElementById("navDropdownMenu");
+
+          if(i.className === "nav_dropdown_menu") {
+               i.className += " responsive";
+          } else {
+               i.className = "nav_dropdown_menu";
+          }
+   }
+      
+     </script>
+     
+</body>
+</html>

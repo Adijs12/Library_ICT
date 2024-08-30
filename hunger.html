@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzanne Collins</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body_items">
+        <div class="item_1">
+            <img src="images/6.png" alt="">
+        </div>
+        <div class="item_2">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="just_do_it">
+            <p>Just
+               Read
+               Out
+            </p>
+        </div>
+    </div>    
+    <div class="container">
+        <nav>
+            <div class="left_nav">
+                <div class="nav_logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="link">HOME</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">NEW</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Author</a>
+                            <div class="link_border"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Best Seller</a>
+                            <div class="link_border"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_nav">
+                <div class="nav_cart_box">
+                    <i class="bx bx-cart"></i>
+                </div>
+                <div class="dropdown">
+                    <div class="menu_bars" onclick="myMenuFunction()">
+                        <div class="menu_bars_btn">
+                          <img src="images/horizontal.png" class="bar_1">
+                          <img src="images/horizontal.png" class="bar_2">
+                        </div>
+                        <div class="nav_dropdown_menu" id="navDropdownMenu">
+                           <ul>
+                             <li>
+                                 <a href="#" class="link">HOME</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">New</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Author</a>
+                                 <div class="link_border"></div>
+                             </li>
+                             <li>
+                                 <a href="#" class="link">Best Seller</a>
+                                 <div class="link_border"></div>
+                             </li>
+                           </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="left_col">
+                <div class="book_title">
+                    <p>The Hunger Games</p>
+                </div>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="book_description">
+                    <p>"The Hunger Games" by Suzanne Collins is a dystopian novel set in the post-apocalyptic nation of Panem, where the Capitol exerts control over 12 districts through oppressive measures. The story follows Katniss Everdeen, a 16-year-old girl from District 12, who volunteers to take her sister Prim's place in the annual Hunger Games, a brutal televised event where 24 children (a boy and a girl from each district) fight to the death until only one remains.
+
+                        Katniss, known for her archery skills and survival instincts, enters the arena with Peeta Mellark, the male tribute from her district, who confesses his love for her before the Games begin. The two navigate the deadly arena, facing various challenges, including lethal traps set by the Capitol, alliances with other tributes, and the constant threat of death.
+                        
+                        As the Games progress, Katniss and Peeta develop a complex relationship, both playing up a romantic angle to gain favor with the audience and sponsors, who can send them life-saving supplies. Katniss struggles with her feelings for Peeta, unsure if his affections are genuine or a strategic move.
+                        
+                        "The Hunger Games" is not just a story of physical survival but also of moral dilemmas and the power of hope in the face of tyranny. Katniss's journey from a girl trying to protect her family to a symbol of resistance against oppression forms the core of this gripping narrative, making it a profound commentary on societal control and individual agency.</p>
+                </div>
+            </div>
+            <div class="cart-button-container">
+                <button id="addToCartBtn" class="btn btn-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        
+
+    function myMenuFunction() {
+        var i = document.getElementById("navDropdownMenu");
+
+          if(i.className === "nav_dropdown_menu") {
+               i.className += " responsive";
+          } else {
+               i.className = "nav_dropdown_menu";
+          }
+   }
+   document.getElementById('addToCartBtn').addEventListener('click', function() {
+    this.classList.toggle('added');
+    if (this.classList.contains('added')) {
+        this.textContent = 'Added to Cart';
+    } else {
+        this.textContent = 'Add to Cart';
+    }
+});
+      
+     </script>
+     
+</body>
+</html>
